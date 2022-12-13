@@ -1,0 +1,2 @@
+GRANT ALL PRIVILEGES ON `%`.* TO 'oop-user'@'%';
+FLUSH PRIVILEGES;
