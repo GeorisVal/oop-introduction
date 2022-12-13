@@ -15,8 +15,11 @@ class Beverage {
         $this->price = $price;
         $this->temperature = $temperature;
     }
-    function getInfo():void {
+    public function getInfo():void {
         echo "This beverage is $this->temperature and $this->color.";
+    }
+    public function test():void {
+        echo Beer::barname;
     }
 }
 // Remember for now we will use properties and methods that can be accessed from everywhere.
@@ -25,7 +28,7 @@ class Beverage {
 //DONE: Print the temperature on the screen.
 
 $cola = new Beverage("black", 2);
-$cola->getInfo();
-echo $cola->temperature;
+// $cola->getInfo();
+// echo "<br>".$cola->temperature;
 
 // USE TYPEHINTING EVERYWHERE!
